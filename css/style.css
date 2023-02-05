@@ -1,0 +1,109 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar-brand span {
+    color: #ffff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.hr {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: -1.5px;
+}
+
+.nav-pills {
+    font-size: 0.8rem;
+
+}
+
+.search-box {
+    background-color: rgb(230, 230, 230);
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 0.8rem;
+    border-radius: 6px;
+
+}
+
+.card {
+
+    border-radius: 10px;
+}
+
+.card-body {
+    font-size: 0.8rem;
+}
+
+.card-body .card-text {
+    display: -webkit-box;
+    max-width: 600px;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+
+.row {
+    margin-bottom: 20px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 10px;
+
+}
+
+.sort p {
+    font-size: 0.8rem;
+}
+
+#dropdownMenuButton1 {
+    width: 112px;
+    margin-left: -5px;
+}
+
+.author {
+    font-size: 0.8rem;
+}
+
+.date {
+    padding-left: 38px;
+}
+
+.dropdown .dropdown-toggle {
+    font-size: 0.8rem !important;
+}
+
+.dropdown .dropdown-menu .dropdown-item {
+    font-size: 0.8rem !important;
+}
+
+.trendingAndToday p {
+    width: 70px;
+    height: 30px;
+}
+
+.trendingAndToday a {
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.rounded-circle {
+    width: 40px;
+    height: 40px;
+}
+
+.spinner-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.detailsBtn {
+    width: 100px;
+    font-size: 0.7rem;
+}

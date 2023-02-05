@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- css link  -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- font awesome link  -->
+  <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+  <title>News Agency</title>
+</head>
+
+<body onload="allcatagory()">
+  <!-----------------------------------
+                 navber 
+  ------------------------------------->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">News agency</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active text-decoration-underline" href="#">News</a>
+          <a class="nav-link" href="blog.html">Blog</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <hr class="hr">
+  <!---------------------------------
+             main section add
+      -------------------------------->
+  <main class="my-5">
+    <!---------------------------------
+             catagory section
+      -------------------------------->
+    <section class="mx-auto catagory">
+      <div class="container">
+        <ul class="nav nav-pills text-black-50 mb-3" id="tab-item" role="tablist">
+
+        </ul>
+      </div>
+    </section>
+    <!---------------------------------
+             view section
+      -------------------------------->
+    <section class="container py-4">
+      <div class="d-flex justify-content-between">
+        <div class="sort d-flex">
+          <p class="pe-2">Sort By view: </p>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Most Viewed
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" id="most-view" href="#">Most Viewed</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!---------------------------
+       result section start
+    ----------------------------->
+    <section class="container search-result my-3">
+      <div class="search-box">
+        <p id="result"></p>
+      </div>
+    </section>
+    <!---------------------------
+       newa card  start
+    ----------------------------->
+    <section class="my-3 py-3 card container">
+      <div class="mx-auto mb-4" id="news-item">
+
+      </div>
+    </section>
+     <!---------------------------
+       spnner section start
+    ----------------------------->
+    <section class="spinner-section d-none" id="loader">
+      <div class="d-flex justify-content-center spinner">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </section>
+     <!---------------------------
+       modal section start
+    ----------------------------->
+    <section class="modal-section">
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" id="modalDialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="Modal"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+              <img id="img" class="img-fluid" src="" alt="">
+              <div id="details">
+
+              </div>
+              <div class="authorDetailsSection d-flex pt-5 justify-content-between">
+                <div class="author" id="author-details">
+                  <img class="rounded-circle" id="author-img" src="" alt="">
+                  <span class="text-primary" id="author-name"></span>
+                  <p class="date" id="published"></p>
+                </div>
+                <div class="view pt-4">
+                  <i class="fas fa-eye"></i>
+                  <span class="text-primary" id="view"></span>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="js/news.js"></script>
+</body>
+
+</html>
